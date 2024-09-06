@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .error{
+        @apply absolute left-[20%] top-[100%] bg-black text-white py-4 px-5 flex items-start justify-between text-xs rounded-full
+    }
+}

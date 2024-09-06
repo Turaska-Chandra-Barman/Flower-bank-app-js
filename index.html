@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="box-border">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Bank</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../output/main.css">
+</head>
+<body>
+     
+    <main class="w-full min-h-screen bg-black py-1 ">
+       <div class="max-w-[500px] bg-white mx-auto  px-5 mt-[100px] p-4">
+        <header class="flex justify-between items-center py-2 ">
+            <a href="#" class="w-8 h-8 bg-cyan-300 flex items-center justify-center rounded-full ">
+                <span class="material-symbols-outlined text-xl">
+                contacts_product
+                </span></a>
+                <h1 class="font-semibold text-xl font-mono">Flower Bank</h1>
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    menu
+                    </span>
+            </a>
+        </header>
+
+        <h1 class="text-center font-mono font-semibold mt-4">My Card</h1>
+        <div class="max-w-[400px]  bg-gradient-to-r from-purple-500 to-cyan-300 mx-auto  rounded-md p-3 sm:p-5 "  >
+            <div>
+              <div class='flex items-center justify-between '>
+                <p class="text-xl font-mono font-semibold">world</p>
+                <p class="font-semibold">card</p>
+              </div>
+              <h1 class="font-semibold  mt-[20px] font-mono">3424 3456 4566 3463</h1>
+              <p class="font-semibold font-mono">world debit <span> 12/26</span></p>
+
+
+                <div  class=" mt-[20px]">
+                    <p id="mainText" class="text-xs font-semibold mb-1">Main Blance</p>
+               <div class="flex items-center justify-between ">
+                   <div class="flex items-center justify-center gap-1 text-xl">
+                    <p id="current" class="font-mono text-white  font-semibold "></p>
+                    <p id="blance" class="font-mono text-white font-semibold"></p>
+                   </div>
+                   <div class="flex items-center justify-center">
+                    <h1 class="w-4 h-4 bg-slate-200 rounded-full"></h1>
+                    <h1  class="w-4 h-4 bg-slate-200 rounded-full"></h1>
+                   </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div id = inputSection class="mx-auto flex flex-col sm:flex-row items-center justify-center mt-5 space-y-2 space-x-4  relative " >
+            <div class="bg-white shadow-md py-1 px-2 rounded-md ">
+            <input type="number" id="inputMoney" class="border-none outline-none text-xs" placeholder=" input your money">
+            <select name="select" id="select" class="border-none outline-none">
+                <option value="Taka">Tk</option>
+                <option value="Swiss Franc">CHF</option>
+                <option value="Rupee">Rs</option>
+                <option value="Dollar">$</option>
+                <option value="Euro">€</option>
+            </select>
+        </div>
+            <div class="flex items-center justify-between gap-3">
+                <button id="add" class="bg-[#09CE68] px-4 py-1 rounded-full text-xs font-semibold  shadow-md">ADD</button>
+                <button id="withdraw" class="bg-[#09CE68] px-4 py-1 rounded-full text-xs font-semibold  shadow-md">withdraw</button>
+            </div>
+        </div>
+
+        <div class="max-w-[400px] mx-auto flex items-baseline justify-between ">
+        <div class="flex items-center mt-5 space-x-2">
+            <button id="historyClear" class="px-2 sm:px-3 py-1 text-[13px] bg-[#09CE68] rounded-full capitalize font-medium" id="clearHistory" >clear history</button>
+            <button class="w-7 h-7 rounded-full bg-white flex items-center justify-center shadow-lg">
+                <span class="material-symbols-outlined text-xl">
+                    add
+                    </span>
+            </button>
+            <button class="w-7 h-7 rounded-full bg-white flex items-center justify-center shadow-lg">
+                <span class="material-symbols-outlined text-xl">
+                    download
+                    </span>
+            </button>
+        </div>
+
+        <div class="flex items-center space-x-2">
+            <h1 class="font-mono font-bold">ID:</h1>
+            <p class="bg-cyan-300 py-1 px-2 rounded-full text-xs font-semibold font-mono shadow-lg">Jekchosn shorf</p>
+        </div>
+    </div>
+
+    <div >
+
+    </div>
+        <div id="transition" class="max-w-[400px] h-[150px] overflow-y-auto mx-auto mt-5 bg-slate-200 rounded-md p-5" >
+            <div class="flex items-center justify-between">
+            <p class="font-mono font-semibold">Transition</p>
+            <button><span class="material-symbols-outlined text-xl">
+                search
+                </span></button>
+            </div>
+
+            <div id="transitionMenu">
+                <div class="mt-5 flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                    <p class="w-7 h-7 rounded-full bg-gray-300 flex items-center justify-center font-mono font-bold text-xl" id="singleLetter">s</p>
+                    <div>
+                        <h1 id="deposit" class="text-xs font-mono font-semibold">jeckshon shorf</h1>
+                        <p  id ='date' class="text-[10px]">14 jul /2024</p>
+                    </div>
+                </div>
+                    <div class="flex items-center space-x-1 listBlance">
+                        <p id="currency" class="font-mono ">Tk</p>
+                        <p id="blance2">00</p>                    
+                </div>
+            </div>
+        </div>
+       </div>
+    </main>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
